@@ -1,0 +1,303 @@
+* {
+    transition: .3;
+}
+
+body {
+background: linear-gradient(-45deg, #4700D8, #9900F0, #F900BF, #9900F0 );
+background-size: 400% 400%;
+animation: gradient 25s ease infinite;
+height: 100vh;
+font-family: 'Gruppo', cursive;
+cursor: default;
+
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+      }
+    50% {
+      background-position: 100% 50%;
+      }
+    100% {
+      background-position: 0% 50%;
+      }
+}
+
+
+
+.principal {
+    height: 72vh;
+    width: 47vh;
+    font-size: 5vh;
+    border-radius: 1.6vh;
+    position: relative;
+    display: none;
+    backdrop-filter: blur( 5vh );
+    -webkit-backdrop-filter: blur( 5vh );
+    opacity: 0;
+    transition: opacity .9s ease-in-out;
+    margin: 2vh;
+    -webkit-box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93); 
+    box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93);;
+}
+
+.fonte-maior {
+    font-size: 8vh;
+    padding-bottom: 1vh;
+}
+
+.h-16{
+    height: 16.2%;
+}
+
+.h-19{
+    height: 20%;
+}
+
+.h-66{
+    height: 64%;
+}
+
+.botao{
+    
+    transition: .4s;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    cursor: pointer;
+    
+}
+
+
+.botao:hover{
+    transition: .4s;
+    transform: scale(1.1);
+    border-radius: 1vh;
+    animation: backwards;
+    backdrop-filter: blur( 8px );
+    text-shadow: 1vw 1vw 1vw #000, 0 0 3vw;
+    background: linear-gradient(-45deg, #4700D8, #9900F0, #F900BF, #9900F0 );
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    -webkit-box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93); 
+    box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93);;
+}
+
+
+.btn-redondo{
+    border-radius: 0px 0px 0px 1.6vh;
+}
+
+.btn-redondo-1{
+    border-radius: 0px 0px 1.6vh 0px;
+}
+
+.resultado {
+    background: linear-gradient(90deg, #4700D8, #9900F0, #F900BF, #9900F0 );
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    border-radius: 1.6vh 1.6vh 0px 0px;
+    transition: 0.4s;
+}
+
+.resultado-num {
+    font-size: 7.5vh;
+    margin: 0;
+    margin-right: 2.8vh;
+    margin-left: 2.8vh;
+    overflow-x: auto;
+    display: block;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    transition: 0.4s;
+    letter-spacing: 0.4vh;
+    
+
+    
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+::-webkit-scrollbar {
+    background: none;
+    height: 2.2vh;
+}
+::-webkit-scrollbar-thumb {
+    background: none;
+    border-radius: 0.8vh;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur( 4vh );
+    -webkit-backdrop-filter: blur( 4vh );
+}
+
+.pop-up{
+    height: 70vh;
+    width: 58vh;
+    backdrop-filter: blur( 5vh );
+    -webkit-backdrop-filter: blur( 5vh );
+    border-radius: 2vh;
+    -webkit-box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93); 
+    box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93);;
+    font-family: 'Raleway', sans-serif;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    margin: 1vh;
+}
+
+main {
+    
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes square {
+    0%,100% {
+      transform: translateY(-4vh);
+    }
+
+    50% {
+      transform: translateY(4vh);
+    }
+  }
+
+.box{
+    width: 30vh;
+    height: 30vh;
+    top: -5vh;
+    right: 54%;
+    position: fixed;
+    border-radius: 3vh;
+    animation: square 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+    background-color: #f900bfa4;
+    -webkit-box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93); 
+    box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93);;
+    
+}
+
+.box2{
+    width: 25vh;
+    height: 23vh;
+    bottom: 10vh;
+    right: 55%;
+    position: fixed;
+    backdrop-filter: blur( 2vh );
+    -webkit-backdrop-filter: blur( 2vh );
+    border-radius: 3vh;
+    animation: square 9s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+    background-color:#4800d8ac;
+    -webkit-box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93); 
+    box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93);;
+}
+.box3{
+    width: 32vh;
+    height: 32vh;
+    bottom: -5vh;
+    left: 52%;
+    position: fixed;
+    border-radius: 3vh;
+    animation: square 12s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+    -webkit-box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93); 
+    box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93);;
+    background-color: #f900bfa7;
+}
+.box4{
+    width: 21vh;
+    height: 23vh;
+    top: 16vh;
+    left: 59%;
+    position: fixed;
+    border-radius: 3vh;
+    animation: square 14s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+    -webkit-box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93); 
+    box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93);;
+    background-color: #4800d8a2;
+
+}
+
+.titulo{
+    color: #ffffff;
+    font-size: 8.5vh;
+    text-align: center;
+    line-height: 9vh;
+    padding-bottom: 1vh;
+    padding-top: 4vh;
+}
+
+
+.texto{
+    color: #ffffff;
+    font-size: 3.4vh;
+    text-align: center;
+    line-height: 4vh;
+    padding-top: 0.5vh;
+}
+
+.iniciar{
+    width: 28vh;
+    height: 8.6vh;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(1, 5, 63, 0.37);
+    backdrop-filter: blur( 10vh );
+    -webkit-backdrop-filter: blur( 10vh );
+    -webkit-box-shadow: 0 0 6vh -3vh rgba(0,0,0,0.93); 
+    box-shadow: 0 0 7vh -3vh rgba(0,0,0,0.93);;
+    border-radius: 0.7vh;
+    margin: 0 auto;
+    font-size: 5vh;
+    transition: .2s;
+    cursor: pointer;
+    background-color: #ffffff14;
+}
+
+.iniciar:hover{
+    transform: scale(1.2);
+}
+
+.img{
+    text-align: center;
+
+}
+
+.github {
+    width: 5.8vh;
+    margin-right: 2.5vh;
+    transition: .25s;
+    cursor: pointer;
+}
+.linkedin {
+    width: 5.7vh;
+    margin-right: 1.4vh;
+    transition: .25s;
+    cursor: pointer;
+}
+.site {
+    width: 8.4vh;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.github:hover {
+    transform: scale(1.3);
+}
+.linkedin:hover {
+    transform: scale(1.3);
+}
+
+.site:hover {
+    transform: scale(1.3);
+}

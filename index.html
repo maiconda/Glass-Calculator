@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <title>Glass Calculator</title>
+</head>
+<body onselectstart="return false">
+    <main>
+
+            <span class="box"></span>
+            <span class="box2"></span>
+            <span class="box3"></span>
+            <span class="box4"></span>
+
+
+        <div class="pop-up flex-column" data-tilt data-tilt-glare data-tilt-max-glare="0.3" id="pop-up">
+            <div class="h-50 textos">
+                <div>
+                    <h3 class="titulo mb-auto">Glass<br>Calculator</h3>
+                </div>
+                <div class="">
+                    <p class="texto">Desenvolvido por<br> Maicon da Silva</p>
+                </div>    
+            </div>
+            <div class="img align-items-center d-flex justify-content-center h-25">
+                <a target="_blank" href="https://github.com/maiconda"><img class="github" src="img/github.png" alt=""></a>
+                <a target="_blank" href="https://www.linkedin.com/in/maicon-de-oliveira-da-silva-b60693249"><img class="linkedin" src="img/linkedin.png" alt=""></a>
+                <a target="_blank" href="https://maicondasilva.netlify.app"><img class="site" src="img/site.png" alt=""></a>
+            </div>
+            <div class="h-25 d-flex align-items-center">   
+                <div class="text-center iniciar d-flex align-items-center justify-content-center text-light" onclick="fechar()"><b>Iniciar</b>
+                </div>
+            </div>
+        </div>
+
+        <div id="calculadora" class="calculadora principal">
+            <div class="h-19 resultado">
+                <div class="text-light text-end resultado-num" id="resultado"></div>
+            </div>
+            <div class="h-16 d-flex">
+                <div class="botao fonte-maior" onclick="insert('+')">+</div>
+                <div class="botao fonte-maior" onclick="insert('-')">-</div>
+                <div class="botao" onclick="insert('*')">*</div>
+                <div class="botao" onclick="insert('/')">/</div>
+            </div>
+            <div class="d-flex h-66 w-100">
+                <div class="h-100 w-100">
+                    <div class="botao h-25 w-100" onclick="insert('7')">7</div>
+                    <div class="botao h-25 w-100" onclick="insert('4')">4</div>
+                    <div class="botao h-25 w-100" onclick="insert('1')">1</div>
+                    <div class="botao btn-redondo h-25 w-100" onclick="insert('0')">0</div>
+                </div>
+                <div class="h-100 w-100">
+                    <div class="botao h-25 w-100" onclick="insert('8')">8</div>
+                    <div class="botao h-25 w-100" onclick="insert('5')">5</div>
+                    <div class="botao h-25 w-100" onclick="insert('2')">2</div>
+                    <div class="botao h-25 w-100" onclick="insert('.')">.</div>
+                </div>
+                <div class="h-100 w-100">
+                    <div class="botao h-25 w-100" onclick="insert('9')">9</div>
+                    <div class="botao h-25 w-100" onclick="insert('4')">6</div>
+                    <div class="botao h-25 w-100" onclick="insert('3')">3</div>
+                    <div class="botao h-25 w-100" onclick="clean()">C</div>
+                </div>
+                <div class="h-100 w-100">
+                    <div class="botao h-100 w-100 btn-redondo-1" onclick="calcular()">=</div>
+                </div>
+            </div>
+     
+    
+        </div>
+
+        
+    </main>
+    <script src="js/vanilla-tilt.js"></script>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
