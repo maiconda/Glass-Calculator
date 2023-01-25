@@ -5,7 +5,7 @@
 
 ## Sobre o projeto
 
-O projeto em questão se trata de uma calculadora em forma de WebSite inspirada no conceito de "Glassmorphism", desenvolvida com o objetivo de demonstrar e praticar conhecimentos obtidos como desenvolvedor Front-End. 
+O projeto em questão se trata de uma calculadora em formato de WebSite inspirada no conceito de "Glassmorphism", desenvolvida com o objetivo de demonstrar e praticar conhecimentos obtidos como desenvolvedor Front-End. 
 
 É possível acessar o projeto a clicando no botão a seguir.
 
