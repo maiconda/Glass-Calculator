@@ -11,15 +11,9 @@ O projeto em questão se trata de uma calculadora em forma de WebSite inspirada 
 
 [![Blog](https://img.shields.io/badge/GlasS_Calculator-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://glasscalculator-maiconda.netlify.app/)
 
-## Layout Mobile
-<img src="img/MOBILE1.PNG" width="250px"/><img src="img/MOBILE2.PNG" width="250px"/><img src="img/MOBILE3.PNG" width="250px"/><img src="img/MOBILE4.PNG" width="250px"/><img src="img/MOBILE5.PNG" width="250px"/><img src="img/MOBILE6.PNG" width="250px"/>
-
-## Layout Desktop
-<img src="img/DESKTOP1.PNG" width="700px"/>
-<img src="img/DESKTOP2.PNG" width="700px"/>
-<img src="img/DESKTOP3.PNG" width="700px"/>
-<img src="img/DESKTOP4.PNG" width="700px"/>
-<img src="img/DESKTOP5.PNG" width="700px"/>
+## Layout
+<img src="img/glass 1.PNG" width="700px"/>
+<img src="img/glass 2.PNG" width="700px"/>
 
 ## Tecnologias utilizadas
 
@@ -34,11 +28,7 @@ O projeto em questão se trata de uma calculadora em forma de WebSite inspirada 
 
 ### Ferramentas Externas
 
-◾ ScrollRevealjs.org
-
-◾️ vincentgarreau.com/particles.js
-
-◾️ FormSubmit.co
+◾ micku7zu.github.io/vanilla-tilt.js
 
 ## Autor
 
